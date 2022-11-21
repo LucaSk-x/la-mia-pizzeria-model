@@ -19,7 +19,7 @@
             @foreach (Pizza pizza in Model)
             {
                 <tr>
-                    <td><a href="@Url.Action("Detail",new {id = pizza.Id})">@pizza.Id</a></td>
+                    <td class="id">@pizza.Id</td>
                     <td class="image"><img class="post-list-image" src="@pizza.Image"></td>
                     <td class="name">@pizza.Name</td>
                     <td class="description">@pizza.Description</td>
